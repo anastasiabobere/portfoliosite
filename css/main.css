@@ -5,4 +5,10 @@
 
 body {
   font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
