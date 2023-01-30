@@ -1,0 +1,128 @@
+// Tablets and smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+// Smartphones
+@media (max-width: 500px) {
+  .nav {
+    flex-direction: column !important;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+
+  #header {
+    &-home {
+      height: 10rem !important;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      .header-content {
+        display: none !important;
+      }
+    }
+    &-inner {
+      height: 10rem !important;
+    }
+  }
+
+  //   stack grid columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  #about-d .testimonials,
+  .items {
+    grid-template-columns: 1fr !important;
+  }
+
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+    &-b {
+      .stats div {
+        padding: 2rem 0 1rem 0 !important ;
+      }
+    }
+  }
+
+  //   About
+
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          "bioimage"
+          "bio"
+          "aw1"
+          "aw2"
+          "aw3" !important;
+      }
+    }
+    &-c {
+      display: none !important;
+    }
+  }
+  //   contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          "name"
+          "subject"
+          "email"
+          "phone"
+          "message" !important;
+      }
+    }
+
+    &-c {
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+
+  //   footer
+
+  #main-footer {
+    height: 7rem !important;
+    .footer-content {
+      flex-direction: column !important;
+      padding: 1rem !important;
+      height: 5rem !important;
+    }
+  }
+}
+
+// landscape
+@media (max-height: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem !important;
+    }
+  }
+}
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+  }
+}

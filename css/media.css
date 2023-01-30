@@ -7,14 +7,10 @@
   }
 }
 @media (max-width: 500px) {
-  nav#main-nav {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav#main-nav li {
-    padding: 1rem;
-  }
   #header-home {
-    height: 10rem;
+    height: 30rem;
+  }
+  #header-home .header-content {
+    padding-top: 5rem;
   }
 }/*# sourceMappingURL=media.css.map */
